@@ -1,5 +1,6 @@
 import SetupCard from "./SetupCard";
 import { setup } from "../database/data";
+import { Link } from "react-router-dom";
 
 const Setup = () => {
   return (
@@ -12,7 +13,7 @@ const Setup = () => {
       </div>
       <div className="flex justify-center  text-white mt-6">
         <h2 className="bg-[#121212] w-fit py-2 px-6 rounded-[12px]">
-          <a href="/inszone">Lainnya</a>
+          <Link to="/Seku/inszone">Lainnya</Link>
         </h2>
       </div>
     </section>

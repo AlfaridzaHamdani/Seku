@@ -13,7 +13,7 @@ const Hero = () => {
         inspirations
       </p>
       <Link
-        to="/inszone"
+        to="/Seku/inszone"
         className="border-[1.6px] border-black px-6 py-2 rounded-full mt-3 lg:mt-5"
       >
         Go to InsZone

@@ -42,12 +42,12 @@ const InsZone = () => {
           className="modal-overlay w-full h-full bg-slate-800/40 p-1 fixed top-0 left-0 flex items-center justify-center"
           onClick={closeModal}
         >
-          <div className="modal-content h-[80%] lg:h-[60%] w-[90vw] lg:w-[1000px] bg-white shadow-xl rounded-[12px] p-[24px] flex flex-wrap justify-between overflow-y-scroll lg:overflow-hidden ">
+          <div className="modal-content h-[80%]  lg:h-fit w-[90vw] lg:w-[1000px] bg-white shadow-xl rounded-[12px] p-[24px] flex flex-wrap justify-between overflow-y-scroll lg:overflow-hidden ">
             <div className="modal-body flex flex-wrap justify-between w-full ">
               <img
                 src={selectedData.image}
                 alt={selectedData.title}
-                className="rounded-[12px] basis-[100%] lg:basis-[30%] lg:w-[300px] h-fit object-cover"
+                className="rounded-[12px] basis-[100%] lg:basis-[30%] lg:w-[300px] lg:h-full h-fit object-cover"
               />
               <div className="modal-details ml-5 flex flex-col w-full flex-wrap basis-[100%] lg:basis-[60%] mt-4">
                 <h1 className="text-3xl mb-4 font-semibold">

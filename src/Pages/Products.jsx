@@ -39,7 +39,7 @@ const ProductList = () => {
     <div>
       <Navbar />
       <section className="px-[30px] lg:px-[154px] flex flex-wrap justify-between pt-[80px] lg:pt-[150px]">
-        <div className="w-[350px] xl:border-r-2 basis-[100%] xl:basis-[15%] flex flex-wrap xl:flex-nowrap  xl:flex-col">
+        <div className="w-[350px] xl:w-[200px] xl:border-r-2 basis-[100%] xl:basis-[15%] flex flex-wrap xl:flex-nowrap  xl:flex-col xl:fixed">
           <h2 className="text-lg font-semibold hidden xl:block">Kategori</h2>
           {categories.map((cat) => (
             <div key={cat} className="">
@@ -52,7 +52,7 @@ const ProductList = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 w-full lg:ml-10 basis-[100%] xl:basis-[80%]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 w-full lg:ml-10 basis-[100%] xl:basis-[80%] xl:pl-[20vw]">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

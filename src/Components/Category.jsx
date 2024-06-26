@@ -21,7 +21,7 @@ const Category = () => {
           <CategoryCard key={cat} cat={cat} />
         ))}
         <a
-          href="/products"
+          href="/Seku/products"
           className="h-[35px] rounded-full border-[3px] border-[#000] flex flex-col items-center justify-center px-6"
         >
           Lainnya

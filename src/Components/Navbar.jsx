@@ -63,38 +63,38 @@ const Navbar = () => {
 
         <ul className="gap-[15px] hidden lg:flex">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/Seku/"
               className={
-                location.pathname === "/" ? "font-semibold" : "font-normal"
+                location.pathname === "/Seku/" ? "font-semibold" : "font-normal"
               }
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="inszone"
+            <Link
+              to="/Seku/inszone"
               className={
-                location.pathname === "/inszone"
+                location.pathname === "/Seku/inszone"
                   ? "font-semibold"
                   : "font-normal"
               }
             >
               InsZone
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="products"
+            <Link
+              to="/Seku/products"
               className={
-                location.pathname === "/products"
+                location.pathname === "/Seku/products"
                   ? "font-semibold"
                   : "font-normal"
               }
             >
               Products
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -107,38 +107,40 @@ const Navbar = () => {
               aria-labelledby="dropdownDefaultButton"
             >
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/Seku/"
                   className={
-                    location.pathname === "/" ? "font-semibold" : "font-normal"
+                    location.pathname === "/Seku/"
+                      ? "font-semibold"
+                      : "font-normal"
                   }
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="inszone"
+                <Link
+                  to="/Seku/inszone"
                   className={
-                    location.pathname === "/inszone"
+                    location.pathname === "/Seku/inszone"
                       ? "font-semibold"
                       : "font-normal"
                   }
                 >
                   InsZone
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="products"
+                <Link
+                  to="/Seku/products"
                   className={
-                    location.pathname === "/products"
+                    location.pathname === "/Seku/products"
                       ? "font-semibold"
                       : "font-normal"
                   }
                 >
                   Products
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

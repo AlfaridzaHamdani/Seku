@@ -2,28 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import InsZone from "./Pages/InsZone";
 import Products from "./Pages/Products";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Seku/",
     element: <Home />,
   },
   {
-    path: "/insZone",
+    path: "/Seku/insZone",
     element: <InsZone />,
   },
   {
-    path: "/products",
+    path: "/Seku/products",
     element: <Products />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

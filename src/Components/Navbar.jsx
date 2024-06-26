@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <nav className="navbar h-[50px] lg:h-[75px] items-center justify-between px-[50px] lg:px-[154px] fixed bg-[#F9F6F2] w-full  flex z-[15]">
         <h1 className="font-extrabold text-[24px] lg:text-[32px]">
-          <a href="/">SEKU</a>
+          <Link to="/Seku/">SEKU</Link>
         </h1>
         <div className="lg:hidden">
           {!isOpen && (
